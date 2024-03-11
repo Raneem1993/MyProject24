@@ -1,0 +1,41 @@
+h1{
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 6vw;
+  text-align: center;
+
+}
+
+.redirect-button{
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #936bca;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  float:right;
+  position: relative;
+  bottom: -24.20em;
+  left: -6.4em;
+
+}
+.redirect-button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+
+.object-fit img{
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 500px;
+  width: 65%;
+  height: 80%;
+  border-radius: 40px;
+}

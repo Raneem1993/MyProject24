@@ -1,27 +1,78 @@
-.card {
-  margin: 100px;
-  border: 1px solid #ccc;
-  float: center;
-  width: 200px;
-}
 
-.card-img-top {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 2,60rem;
-  object-fit: cover;
+ul{
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin: 1.5rem;
-  margin-top: 0.5rem;
-  border-bottom: 1px solid #e4e4e4;
-  border-radius: 2.5rem;
-}
-
-.card-body {
-  display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+li{
+  height: 25rem;
+  width: 25rem;
+  border: 3px solid whitesmoke;
+  border-radius: 2rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #7006fa5b;
+}
+li:hover{
+  opacity: 2.9;
+  cursor: pointer;
+}
 
+img{
+  border-radius: 3rem;
+  flex: 1 0;
+  object-fit: cover;
+  height: 20rem;
+  margin: 0.5rem;
+  size: 30rem;
+}
+
+.details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex:1 0;
+  padding: 2rem;
+  color: black;
+  margin-left: 1rem;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.name{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+
+
+.kurse-time{
+  margin: right;
+  border-radius: 1rem;
+  font-size: 1rem;
+
+}
+
+
+button:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
 }

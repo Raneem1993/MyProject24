@@ -1,30 +1,38 @@
-<div class="container mt-3">
+<div *ngIf="!deleted"  class="container mt-3">
   <h3 class="m-3">Alle Einträge</h3>
   <div class="table-responsive">
     <table class="m-3 table table-striped table-hover">
-      <caption>Alle <code>members</code></caption>
+      <caption>Alle <code>Students</code></caption>
       <thead>
         <tr>
           <th scope="col ">Nr</th>
           <th scope="col ">Vorname</th>
           <th scope="col ">Nachname</th>
           <th scope="col ">E-Mail</th>
+          <th scope="col ">Wohnadresse</th>
+          <th scope="col ">Kurse</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr *ngFor="let student of students; let i=index; ">
+          <td>{{ i+1 }}</td>
+          <td>{{ student.firstname }}</td>
+          <td>{{ student.lastname }}</td>
           <td>
-            <a [href]="'mailto:'"><span class="bi bi-envelope px-5"></span></a>
-            <a > <span class=" bi bi-pencil-square px-5 "></span></a>
-            <span class=" bi bi-trash px-5 "></span>
+            <a [href]="'E-mail:'+ student.email"><span class="bi bi-envelope px-5"></span></a>
+            <a [href]="'Wohnadresse:'+ student.address"><span class="bi bi-envelope px-5"></span></a>
+            <a [href]="'Kurse:'+ student.kurse"><span class="bi bi-envelope px-5"></span></a>
+            <a [routerLink]="['/student', student._id]" > <span class=" bi bi-pencil-square px-5 "></span></a>
+            <span (click)="delete(student._id)" class=" bi bi-trash px-5 "></span>
           </td>
         </tr>
       </tbody>
 
     </table>
   </div>
+</div>
+<div *ngIf="deleted" class=" container mt-3 ">
+  <h3>Datensatz wurde gelöscht!</h3>
+  <button type="button" class="btn btn-secondary" (click)="reload(false)">Zurück zur Tabelle</button>
 </div>
 

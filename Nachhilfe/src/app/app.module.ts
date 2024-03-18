@@ -11,6 +11,10 @@ import { CardsComponent } from './components/cards/cards.component';
 import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { HttpClientModule } from '@angular/common/http';
+import { DetailComponent } from './components/detail/detail.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +23,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     StartseiteComponent,
     TableComponent,
     CardsComponent,
-    LoginComponent
+    LoginComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +32,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     NgbModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

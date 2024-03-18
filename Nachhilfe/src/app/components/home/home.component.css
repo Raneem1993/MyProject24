@@ -3,6 +3,7 @@ h1{
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   font-size: 6vw;
   text-align: center;
+  margin-top: 50px;
 
 }
 
@@ -33,8 +34,8 @@ h1{
 
 .object-fit img{
   margin-left: 60px;
-  margin-top: 40px;
-  margin-bottom: 500px;
+  margin-top: 80px;
+  margin-bottom: 200px;
   width: 65%;
   height: 80%;
   border-radius: 40px;

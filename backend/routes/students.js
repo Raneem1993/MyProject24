@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const Student = require('./models/students');
+const Student = require('../models/students');
 
-// get all members
+
+// get all students
 router.get('/students', async(req, res) => {
     const allStudents = await Student.find();
     console.log(allStudents);

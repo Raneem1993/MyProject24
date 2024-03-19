@@ -61,9 +61,7 @@ export class RegisterComponent {
       this.dialog.open(ConfirmComponent, { data });
   }
 
-  changeRoute(){
-    this.router.navigateByUrl('/startseite');
-  }
+ 
 
   }
 

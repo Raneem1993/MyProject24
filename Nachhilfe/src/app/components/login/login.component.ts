@@ -49,17 +49,20 @@ export class LoginComponent {
     )
 
   }
+  changeRoute(){
+    this.router.navigateByUrl('/startseite');
+  }
 
-  
+
 }
 
 
 
-    
 
-  
 
-  
+
+
+
 
 
 

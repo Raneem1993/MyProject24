@@ -1,3 +1,6 @@
+@import url('../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+
 .redirect-button{
   display: inline-block;
   padding: 15px 25px;
@@ -20,4 +23,16 @@
 .redirect-button:hover{
   opacity: 1;
   cursor: pointer;
+}
+
+mat-card {
+  margin: 5% 20%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+mat-card-header {
+  margin-bottom: 3%;
 }

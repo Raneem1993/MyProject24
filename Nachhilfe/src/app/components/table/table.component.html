@@ -22,7 +22,7 @@
             <a [href]="'E-mail:'+ student.email"><span class="bi bi-envelope px-5"></span></a>
             <a [href]="'Wohnadresse:'+ student.address"><span class="bi bi-envelope px-5"></span></a>
             <a [href]="'Kurse:'+ student.kurse"><span class="bi bi-envelope px-5"></span></a>
-            <a [routerLink]="['/student', student._id]" > <span class=" bi bi-pencil-square px-5 "></span></a>
+          
             <span (click)="delete(student._id)" class=" bi bi-trash px-5 "></span>
           </td>
         </tr>

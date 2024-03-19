@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmComponent } from './register/confirm/confirm.component';
 import { RegisterComponent } from './register/register.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 
@@ -30,6 +31,7 @@ import { RegisterComponent } from './register/register.component';
     LoginComponent,
     ConfirmComponent,
     RegisterComponent,
+    DetailComponent,
     
   ],
   imports: [

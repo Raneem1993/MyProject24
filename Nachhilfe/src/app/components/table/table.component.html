@@ -11,6 +11,7 @@
           <th scope="col ">E-Mail</th>
           <th scope="col ">Wohnadresse</th>
           <th scope="col ">Kurse</th>
+          <th scope="col ">Bearbeiten</th>
         </tr>
       </thead>
       <tbody>
@@ -18,12 +19,12 @@
           <td>{{ i+1 }}</td>
           <td>{{ student.firstname }}</td>
           <td>{{ student.lastname }}</td>
+          <td>{{ student.email }}</td>
+          <td>{{ student.address }}</td>
+          <td>{{ student.kurse }}</td>
           <td>
-            <a [href]="'E-mail:'+ student.email"><span class="bi bi-envelope px-5"></span></a>
-            <a [href]="'Wohnadresse:'+ student.address"><span class="bi bi-envelope px-5"></span></a>
-            <a [href]="'Kurse:'+ student.kurse"><span class="bi bi-envelope px-5"></span></a>
-            <a [routerLink]="['/member', student._id]"> <span class=" bi bi-pencil-square px-5 "></span></a>
-            <span (click)="delete(student._id)" class=" bi bi-trash px-5 "></span>
+            <a [routerLink]="['/student', student._id]"> <span class= "bi bi-pencil-square px-5"></span></a>
+            <span (click)="delete(student._id)" class=" bi bi-trash px-5 ">löschen</span>
           </td>
         </tr>
       </tbody>

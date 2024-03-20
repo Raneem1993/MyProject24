@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const mongoose = require('mongoose');
 const students = require('./routes/students');
 const users = require('./routes/users');
@@ -9,6 +10,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(cors());
 app.use('/', students);
 app.use('/', users);
 

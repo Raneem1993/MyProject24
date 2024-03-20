@@ -30,7 +30,7 @@ export class TableComponent implements OnInit {
             error: (err) => console.log(err),
             complete: () => console.log('getAll() completed')
           })
-  }
+        }
 
   delete(id: string): void {
     this.bs.deleteOne(id).subscribe(

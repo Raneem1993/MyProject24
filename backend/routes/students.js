@@ -14,7 +14,7 @@ router.get('/students/:id', async(req, res) => {
     const student = await Student.findOne({ _id: req.params.id });
     console.log(req.params);
     if(student) {
-        res.send(student[0]);
+        res.send(student);
     } else {
         res.status(404);
         res.send({

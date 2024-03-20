@@ -22,7 +22,11 @@ export class BackendService {
     return this.http.patch<Student>(this.baseUrl + '/' + id, data);
   }
 
+  create(student:Student){
+    return this.http.post<Student>(this.baseUrl, student);
+  }
+
   deleteOne(id: string): Observable<any>{
     return this.http.delete<any>(this.baseUrl + '/' + id, {observe: 'response'});
-  }     
+  }
 }

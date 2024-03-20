@@ -1,6 +1,6 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BackendService } from '../../shared/backend.service';
 import { Student } from '../../shared/student';
@@ -14,12 +14,14 @@ export class DetailComponent implements OnInit {
   id: string = '';
   student!: Student;
   form = new FormGroup({
-    firstnameControl : new FormControl<String>(''),
-    lastnameControl: new FormControl<String>(''),
-    emailControl: new FormControl<String>(''),
-    addressControl: new FormControl<String>(''),
-    kurseControl: new FormControl<[String]>(['']),
+    firstname : new FormControl('', Validators.required),
+    lastname: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required),
+    address: new FormControl('', Validators.required),
+    kurse: new FormControl('', [Validators.required]),
 });
+
+
 
   constructor(
     private route: ActivatedRoute,
@@ -40,11 +42,12 @@ export class DetailComponent implements OnInit {
                 this.student = response;
                 console.log('student',this.student);
                 this.form.patchValue({
-                  firstnameControl: this.student?.firstname,
-                  lastnameControl: this.student?.lastname,
-                  emailControl: this.student?.email,
-                  addressControl: this.student?.address,
-                  kurseControl: this.student?.kurse
+                  firstname: this.student?.firstname,
+                  lastname: this.student?.lastname,
+                  email: this.student?.email,
+                  address: this.student?.address,
+                  
+
                 })
                 return this.student;
         },
@@ -55,10 +58,10 @@ export class DetailComponent implements OnInit {
 
   update(): void {
     const values = this.form.value;
-    this.student.firstname = values.firstnameControl!;
-    this.student.lastname = values.lastnameControl!;
-    this.student.email = values.emailControl!;
-    this.student.address = values.addressControl!;
+    this.student.firstname = values.firstname!;
+    this.student.lastname = values.lastname!;
+    this.student.email = values.email!;
+    this.student.address = values.address!;
     this.bs.update(this.id, this.student)
       .subscribe({
         next: (response) => {
@@ -72,6 +75,7 @@ export class DetailComponent implements OnInit {
       }
       );
     this.router.navigateByUrl('/table');
+
   }
 
   cancel(): void {

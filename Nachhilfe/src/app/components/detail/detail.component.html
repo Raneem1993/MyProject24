@@ -1,6 +1,6 @@
 <main class="d-flex min-vh-100">
   <fieldset class="container  mt-5">
-    <legend *ngIf="student" class="mb-4">Eintrag von {{ student.firstname }} {{ student.lastname }} {{ student.kurse}}  aktualisieren
+    <legend *ngIf="student" class="mb-4">Eintrag von {{ student.firstname }} {{ student.lastname }} aktualisieren
     </legend>
     <legend *ngIf="!student" class="mb-4">Eintrag aktualisieren</legend>
     <form [formGroup]="form" (ngSubmit)="update()">
@@ -25,15 +25,9 @@
         </div>
       </div>
       <div class="mb-3 row">
-        <label class="col-2 col-form-label" for="ipaddress">WohnAdresse</label>
+        <label class="col-2 col-form-label" for="ipaddress">WohnAddresse</label>
         <div class="col-10">
-          <input type="text" class="col-10 form-control" id="address" placeholder="WohnAdresse" formControlName="addressControl" />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-2 col-form-label" for="kurse">kurse</label>
-        <div class="col-10">
-          <input type="text" class="col-10 form-control" id="kurse" placeholder="kurse" formControlName="kurseControl" />
+          <input type="text" class="col-10 form-control" id="address" placeholder="WohnAddresse" formControlName="addressControl" />
         </div>
       </div>
       <div class="row ">

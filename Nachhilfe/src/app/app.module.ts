@@ -9,12 +9,11 @@ import { TableComponent } from './components/table/table.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmComponent } from './register/confirm/confirm.component';
 import { RegisterComponent } from './register/register.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,6 +23,7 @@ import { DetailComponent } from './components/detail/detail.component';
 @NgModule({
   declarations: [
     AppComponent,
+    DetailComponent,
     HomeComponent,
     StartseiteComponent,
     TableComponent,
@@ -31,18 +31,15 @@ import { DetailComponent } from './components/detail/detail.component';
     LoginComponent,
     ConfirmComponent,
     RegisterComponent,
-    DetailComponent,
-    
+
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    
+    ReactiveFormsModule
 
   ],
   providers: [],

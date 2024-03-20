@@ -6,6 +6,7 @@ import { StartseiteComponent } from './components/startseite/startseite.componen
 import { LoginComponent } from './components/login/login.component';
 import { TableComponent } from './components/table/table.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { AddComponent } from './components/add/add.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'anmeldung', component: LoginComponent },
   { path: 'table', component: TableComponent },
   { path: 'student/:id', component: DetailComponent },
+  { path: 'students', component: AddComponent },
 
 
 

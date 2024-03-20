@@ -1,1 +1,15 @@
 @import url('../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
+.bi-person-plus-fill{
+  color:blue;
+  float:right;
+  position: auto;
+  font-size: medium;
+}
+
+.bi-trash{
+  color:red;
+}
+
+.bi-pencil-square{
+  color:blue;
+}

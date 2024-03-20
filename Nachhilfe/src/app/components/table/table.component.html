@@ -1,8 +1,10 @@
 <div *ngIf="!deleted"  class="container mt-3">
-  <h3 class="m-3">Alle Einträge</h3>
+  <a [routerLink]="['/students']"><i class="bi bi-person-plus-fill">neu Schüler</i></a>
+  <h2 class="m-3">Alle Einträge</h2>
   <div class="table-responsive">
     <table class="m-3 table table-striped table-hover">
       <caption>Alle <code>Students</code></caption>
+      
       <thead>
         <tr>
           <th scope="col ">Nr</th>
@@ -11,7 +13,7 @@
           <th scope="col ">E-Mail</th>
           <th scope="col ">Wohnadresse</th>
           <th scope="col ">Kurse</th>
-          <th scope="col ">Bearbeiten</th>
+          <th scope="col ">Bearbeiten</th> 
         </tr>
       </thead>
       <tbody>
@@ -24,6 +26,7 @@
           <td>{{ student.kurse }}</td>
           <td>
             <a [routerLink]="['/student', student._id]"> <span class= "bi bi-pencil-square px-5"></span></a>
+           
             <span (click)="delete(student._id)" class=" bi bi-trash px-5 ">löschen</span>
           </td>
         </tr>

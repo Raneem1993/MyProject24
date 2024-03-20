@@ -14,6 +14,10 @@ import { ConfirmComponent } from './register/confirm/confirm.component';
 import { RegisterComponent } from './register/register.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { AddComponent } from './components/add/add.component';
 
 
 
@@ -31,6 +35,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     ConfirmComponent,
     RegisterComponent,
+    AddComponent,
 
   ],
   imports: [
@@ -39,7 +44,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule
 
   ],
   providers: [],

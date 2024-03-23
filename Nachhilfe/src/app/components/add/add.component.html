@@ -1,44 +1,88 @@
-<main class="d-flex min-vh-100">
-  <fieldset  class="container  mt-5">
-    <legend class="mb-4">Nue Schüler</legend>
-    <form  >
-      <div class="mb-3 row" >
-        <label class="col-2 col-form-label" for="firstname">Vorname</label>
-        <div class="col-10">
-          <input type="text" class="form-control" id="firstname" placeholder="Vorname"
-          formControlName="firstnameControl" />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-2 col-form-label" for="lastname">Nachname</label>
-        <div class="col-10">
-          <input type="text" class="col-10 form-control" id="lastname" placeholder="Nachname"
-          formControlName="lastnameControl" />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-2 col-form-label" for="email">E-Mail</label>
-        <div class="col-10">
-          <input type="email" class="col-10 form-control" id="email" placeholder="E-Mail" formControlName="emailControl" />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-2 col-form-label" for="address">Wohnadresse</label>
-        <div class="col-10">
-          <input type="text" class="col-10 form-control" id="address" placeholder="Wohndresse" formControlName="addressControl" />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label class="col-2 col-form-label" for="address">kurse</label>
-        <div class="col-10">
-          <input type="text" class="col-10 form-control" id="kurse" placeholder="kurse" formControlName="kurseControl" />
-        </div>
-      </div>
-      <div class="row">
-        <button type="submit" class="col-5 btn btn-secondary" >Addieren</button>
-        <div class="col-2"></div>
-        <button type="button" class="col-5 btn btn-secondary" (click)="cancel()">Abbrechen</button>
-      </div>
-    </form>
-  </fieldset>
-</main>
+<div class="container">
+  <h2 class="my-4">Neu Schüler addieren</h2>
+  <div class="mb-4 mb-row">
+    <input type="text" class="form-control" id="idVorname" placeholder="Vorname" [formControl]="firstnameFC"
+      [class]="firstnameFC.touched ? firstnameFC.valid ? 'is-valid' : 'is-invalid' : ''">
+    <div class="invalid-feedback">
+      Please provide a firstname.
+    </div>
+  </div>
+  <div class="mb-4 mb-row">
+    <input type="text" class="form-control" id="idLastname" placeholder="Nachname" [formControl]="lastnameFC"
+      [class]="lastnameFC.touched ? lastnameFC.valid ? 'is-valid' : 'is-invalid' : ''">
+    <div class="invalid-feedback">
+      Please provide a lastname.
+    </div>
+  </div>
+  <div class="mb-4 mb-row">
+    <input type="email" class="form-control" id="staticEmail" placeholder="email@example.com" [formControl]="emailFC"
+      [class]="emailFC.touched ? emailFC.valid ? 'is-valid' : 'is-invalid' : ''">
+    <div class="invalid-feedback">
+      Please provide a valid email address.
+    </div>
+  </div>
+  <div class="mb-4 mb-row">
+    <input type="text" class="form-control" id="idAddress" placeholder="address"[formControl]="addressFC"
+      [class]="addressFC.touched ? addressFC.valid ? 'is-valid' : 'is-invalid' : ''">
+    <div class="invalid-feedback">
+      Please provide a valid  Wohnaddress.
+    </div>
+  </div>
+  <div class="mb-4 mb-row">
+    <input type="text" class="form-control" id="kurse" placeholder="kurse"[formControl]="kurseFC"
+      [class]="kurseFC.touched ? kurseFC.valid ? 'is-valid' : 'is-invalid' : ''">
+    <div class="invalid-feedback">
+      Please provide a valid  Wohnaddress.
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+    <button type="submit" class="w-100 btn btn-success" (click)="student(content)">Addieren</button>
+    </div>
+    <div class="col">
+    <button type="button" class="w-100 btn btn-secondary" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h6 class="modal-title" id="modal-basic-title">neu Schüler wurde addiert</h6>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>firstname</td>
+          <td>:</td>
+          <td>{{ firstnameFC.value }}</td>
+        </tr>
+        <tr>
+          <td>lastname</td>
+          <td>:</td>
+          <td>{{ lastnameFC.value }}</td>
+        </tr>
+        <tr>
+          <td>email</td>
+          <td>:</td>
+          <td>{{ emailFC.value }}</td>
+        </tr>
+        <tr>
+          <td>address</td>
+          <td>:</td>
+          <td>{{ addressFC.value }}</td>
+        </tr>
+        <tr>
+          <td>kurse</td>
+          <td>:</td>
+          <td>{{ kurseFC.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Close</button>
+  </div>
+</ng-template>

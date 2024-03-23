@@ -1,12 +1,24 @@
-main {
+.container {
   background-color: rgba(210, 190, 212, 0.729);
+  font-size:small;
+  border-radius: 30px;
+  width: 400rem;
+  height:40rem;
+  line-height: 60px;
 }
 
-legend {
+
+
+.form-floating{
   font-weight: bold;
 }
 
-.col-5{
+.btn-success{
  background-color: rgb(196, 123, 152);
+ 
 
+}
+
+.btn-secondary{
+  background-color: rgb(196, 123, 152);
 }

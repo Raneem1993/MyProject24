@@ -18,7 +18,7 @@ export class DetailComponent implements OnInit {
     lastnameControl: new FormControl<string>(''),
     emailControl: new FormControl<string>(''),
     addressControl: new FormControl<string>(''),
-    kurseControl: new FormControl<[string]>(['']),
+    kurseControl: new FormControl<string[]>(['']),
 });
 
   constructor(
@@ -60,6 +60,7 @@ export class DetailComponent implements OnInit {
     this.student.lastname = values.lastnameControl!;
     this.student.email = values.emailControl!;
     this.student.address = values.addressControl!;
+    this.student.kurse = values.kurseControl!;
     this.bs.update(this.id, this.student)
       .subscribe({
         next: (response) => {

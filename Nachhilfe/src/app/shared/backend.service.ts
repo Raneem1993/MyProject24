@@ -8,6 +8,8 @@ import { Student } from './student';
 })
 export class BackendService {
   baseUrl = 'http://localhost:3000/students';
+  Student: any;
+
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<Student[]>{
@@ -21,9 +23,10 @@ export class BackendService {
   update(id: string, data: Student): Observable<Student> {
     return this.http.patch<Student>(this.baseUrl + '/' + id, data);
   }
+  
 
-  add(data: any): Observable<any> {
-    return this.http.post(this.baseUrl, data);
+  createNewStudent(student: Student): Observable<Student> {
+    return this.http.post<Student>(this.baseUrl, student);
   }
 
 

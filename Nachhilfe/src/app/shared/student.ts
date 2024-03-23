@@ -4,6 +4,6 @@ export interface Student {
     lastname: string;
     email: string;
     address: string;
-    kurse:[string];
+    kurse:string[];
 
 }

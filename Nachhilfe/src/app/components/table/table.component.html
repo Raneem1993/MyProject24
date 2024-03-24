@@ -1,9 +1,9 @@
 <div *ngIf="!deleted"  class="container mt-3">
   <a [routerLink]="['/students']"><i class="bi bi-person-plus-fill">neu Schüler</i></a>
-  <h2 class="m-3">Alle Einträge</h2>
+  <h2 class="m-3">Schüler Daten</h2>
   <div class="table-responsive">
     <table class="m-3 table table-striped table-hover">
-      <caption>Alle <code>Students</code></caption>
+      <caption>Alle <code>Schüler</code></caption>
       
       <thead>
         <tr>
@@ -39,4 +39,8 @@
   <h3>Datensatz wurde gelöscht!</h3>
   <button type="button" class="btn btn-secondary" (click)="reload(false)">Zurück zur Tabelle</button>
 </div>
+<div>
+  <button class="redirect-button" (click)="changeRoute()">züruck zur Startseite !
+  </button>
+</div>  
 

@@ -58,4 +58,8 @@ export class TableComponent implements OnInit {
     this.router.navigateByUrl('/table');
   }
 
+  changeRoute(){
+    this.router.navigateByUrl('/startseite');
+  }
+
 }

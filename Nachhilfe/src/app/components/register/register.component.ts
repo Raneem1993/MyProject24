@@ -1,10 +1,11 @@
+
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '../shared/auth.service';
-import { User } from '../shared/user';
-import { ConfirmComponent } from './confirm/confirm.component';
+import { AuthService } from 'src/app/shared/auth.service';
+import { User } from 'src/app/shared/user';
+import { ConfirmComponent } from '../confirm/confirm.component';
 
 export interface DialogData {
   headline: string;
@@ -18,7 +19,7 @@ export interface DialogData {
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  [x: string]: any;
+
   registerForm = new FormGroup({
     username: new FormControl('', Validators.required),
     password: new FormControl('', [Validators.required, Validators.minLength(8)]),
@@ -31,7 +32,7 @@ export class RegisterComponent {
   hide2 = true;
   user!: User;
 
-  constructor(private auth: AuthService, public dialog: MatDialog,private router: Router) {}
+  constructor(private auth: AuthService, private router: Router,public dialog: MatDialog) {}
 
   onSubmit(): void {
     const values = this.registerForm.value;
@@ -48,20 +49,21 @@ export class RegisterComponent {
           this.user = response;
           this.auth.login(this.user)
           this.openDialog({ headline: "Erfolg", info: "User " + response.username + " registriert!" });
+          this.router.navigateByUrl('/startseite');
         },
         error: (err) => {
           console.log('error', err.error.error)
           this.openDialog({ headline: "Fehler", info: "username und/oder E-Mail existiert bereits" });
+          this.router.navigateByUrl('/users');
         },
         complete: () => console.log('register completed')
-    });
+    })
+
   }
 
     openDialog(data: DialogData) {
       this.dialog.open(ConfirmComponent, { data });
-  }
-
- 
 
   }
 
+}

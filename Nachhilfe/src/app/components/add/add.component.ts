@@ -77,7 +77,7 @@ constructor(
 
   cancel() :void{
     this.location.back();
-    
+
   }
 
   private getDismissReason(reason: any): string {

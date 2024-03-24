@@ -7,7 +7,7 @@ import { User } from './user';
   providedIn: 'root'
 })
 export class AuthService {
-  
+
   baseUrl = 'http://localhost:3000';
   user: User = {username: '', password: '', email: '', role: ''};
   userChange: Subject<User> = new Subject<User>();
@@ -32,11 +32,11 @@ export class AuthService {
   }
 
   registerUser(user:User): Observable<any> {
-    return this.http.post(this.baseUrl + '/users/register', user);
+    return this.http.post(this.baseUrl + '/users', user);
   }
 
   loginUser(username: string, password: string ): Observable<any>{
-    return this.http.post(this.baseUrl + '/users/login/', { username: username, password: password }, {observe: 'response'});
+    return this.http.post(this.baseUrl + '/users/login', { username: username, password: password }, {observe: 'response'});
   }
 
   isLoggedin(): boolean {

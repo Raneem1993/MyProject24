@@ -34,7 +34,7 @@ export class LoginComponent {
             this.auth.getOneUser(username!).subscribe(
               (response) => {
                   this.auth.login(response);
-                  this.router.navigate(['/userlist'])
+                  this.router.navigate(['/startseite'])
               }
             )
           } else {
@@ -49,12 +49,11 @@ export class LoginComponent {
     )
 
   }
-  changeRoute(){
-    this.router.navigateByUrl('/startseite');
-  }
-
 
 }
+
+
+
 
 
 

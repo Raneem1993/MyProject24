@@ -10,7 +10,7 @@ ul{
 li{
   height: 25rem;
   width: 25rem;
-  border: 3px solid whitesmoke;
+  border: 2px solid whitesmoke;
   border-radius: 2rem;
   margin: 0.5rem;
   display: flex;
@@ -19,17 +19,17 @@ li{
   color: #7006fa5b;
 }
 li:hover{
-  opacity: 2.9;
+  opacity: 1.9;
   cursor: pointer;
 }
 
 img{
-  border-radius: 3rem;
+  border-radius: 2rem;
   flex: 1 0;
   object-fit: cover;
-  height: 20rem;
+  height: 15rem;
   margin: 0.5rem;
-  size: 30rem;
+  size: 25rem;
 }
 
 .details{
@@ -37,20 +37,11 @@ img{
   display: flex;
   flex-direction: column;
   flex:1 0;
-  padding: 2rem;
+  padding: 1rem;
   color: black;
-  margin-left: 1rem;
+  
 }
 
-.header{
-  display: flex;
-  justify-content: space-between;
-}
-
-.name{
-  font-size: 2rem;
-  font-weight: bold;
-}
 
 
 

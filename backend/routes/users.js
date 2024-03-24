@@ -11,7 +11,6 @@ router.get('/users', async(req, res) => {
     res.send(allUsers);
 });
 
-// post one user - register
 router.post('/users', async(req, res) => {
     const existingUsername = await User.findOne( {username: req.body.username});
     const existingEmail = await User.findOne( {email: req.body.email});
@@ -31,6 +30,8 @@ router.post('/users', async(req, res) => {
         res.status(400).json({ error: 'username and/or email exist(s)' });
     }
 });
+
+
 
 // post username and password - login
 router.post('/users/login', async(req, res) => {

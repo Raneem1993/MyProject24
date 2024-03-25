@@ -1,7 +1,14 @@
 <app-cards></app-cards>
-<a routerLink="/startseite"></a>
+<mat-sidenav-container class="sidenav-container">
+  
+      <span *ngIf="isLoggedIn" class="menu-container">
+        <a routerLink="/users">{{username}}</a>
+      </span>
+       
 <div>
   <button class="redirect-button" (click)="changeRoute()">zur Schüler Übersicht Tabelle 
   </button>
 </div>
+
+
 

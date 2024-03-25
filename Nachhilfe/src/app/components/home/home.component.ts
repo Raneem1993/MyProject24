@@ -11,6 +11,7 @@ import { AuthService } from 'src/app/shared/auth.service';
 })
 export class HomeComponent {
   isLoggedIn = false;
+  loggedIn = false;
   username: string = '';
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
@@ -24,35 +25,34 @@ export class HomeComponent {
       this.isLoggedIn = value
       if(this.isLoggedIn) {
         this.auth.userChange.subscribe( val => {
-          console.log('nav user', val)
+          console.log('user', val)
           this.username = val?.username;
-          console.log('nav username', this.username)
+          console.log('username', this.username)
         })
 
       }
     })
   }
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+
+  isLoggedin(): boolean {
+    return this.loggedIn;
+    
   }
 
   callLogin() {
-    this.router.navigate(['/login'])
+    this.router.navigate(['/users/login'])
   }
 
   callLogout() {
     this.isLoggedIn = false;
     this.auth.logout();
-    this.router.navigate(['/login'])
+    this.router.navigate(['/users/login'])
   }
 
-  changeRoute(){
-    this.router.navigateByUrl('/users');
-  }
 
 }
 
 
 
-  
+
 

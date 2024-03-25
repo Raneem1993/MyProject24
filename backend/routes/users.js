@@ -103,8 +103,8 @@ router.put('/users/:id', async(req, res) => {
 });
 
 // get one user via username
-router.get('/:name', async(req, res) => {
-    const user = await User.findOne({ username: req.params.name });
+router.get('/users/:name', async(req, res) => {
+    const user = await User.findOne({ username: req.params.username });
     if(user) {
         res.send(user);
     } else {

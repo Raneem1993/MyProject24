@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../shared/auth.service';
 
@@ -34,8 +34,10 @@ export class LoginComponent {
             this.auth.getOneUser(username!).subscribe(
               (response) => {
                   this.auth.login(response);
-                  this.router.navigate(['/startseite'])
+                  this.router.navigateByUrl('/startseite');
+                  
               }
+              
             )
           } else {
             console.log('kein Login - Nutzername und/oder Passwort stimmen nicht')
@@ -43,8 +45,11 @@ export class LoginComponent {
       },
       error: (err) => {
         console.log('login error',err);
+        this.router.navigate(['/users'])
       },
       complete: () => console.log('login completed')
+      
+
     }
     )
 

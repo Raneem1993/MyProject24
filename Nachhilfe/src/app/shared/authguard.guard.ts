@@ -17,7 +17,7 @@ export class AuthguardGuard implements CanActivate {
     state: RouterStateSnapshot): boolean | UrlTree {
     return this.as.isLoggedin()
       ? true
-      : this.router.parseUrl('/login');
+      : this.router.parseUrl('/users/login');
   }
 
 }

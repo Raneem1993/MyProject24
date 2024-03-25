@@ -1,7 +1,7 @@
 <body>
   <h1>Light Nachhilfe</h1>
   <div>
-    <button class="redirect-button" (click)="changeRoute()">zur Registrierung
+    <button class="redirect-button"  [routerLink]="'users/login'"> anmeldung
     </button>
   </div>
   <div class="object-fit"><img src="../assets/images/schule.jpeg" alt="schule logo"/></div>
@@ -10,11 +10,6 @@
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
         [mode]="(isHandset$ | async) ? 'over' : 'side'"
         [opened]="(isHandset$ | async) === false">
-      <mat-nav-list>
-          <a mat-list-item [routerLink]="'register'">Register</a>
-          <a mat-list-item [routerLink]="'login'">Login</a>
-          <a mat-list-item [routerLink]="'users'">All users</a>
-      </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
       <mat-toolbar color="primary" class="flex">
@@ -27,13 +22,7 @@
         <button *ngIf="!isLoggedIn" mat-icon-button class="right" (click)="callLogin()">
           <mat-icon>login</mat-icon>
         </button>
-        <div *ngIf="isLoggedIn" class="right">
-          <span>{{username}} </span>
-          <button mat-icon-button (click)="callLogout()">
-            <mat-icon>logout</mat-icon>
-          </button>
-        </div>
-  
+       
       </mat-toolbar>
       <!-- Add Content Here -->
       <router-outlet></router-outlet>

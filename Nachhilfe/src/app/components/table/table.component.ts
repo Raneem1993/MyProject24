@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/shared/auth.service';
 import { BackendService } from 'src/app/shared/backend.service';
 import { Student } from 'src/app/shared/student';
 
@@ -11,8 +12,11 @@ import { Student } from 'src/app/shared/student';
 export class TableComponent implements OnInit {
   students!: Student[];
   deleted = false;
+  isLoggedIn = false;
+  loggedIn = false;
+  username: string = '';
 
-  constructor(private bs: BackendService, private router: Router) { }
+  constructor(private bs: BackendService, private router: Router,private auth: AuthService) { }
 
 
   ngOnInit(): void {
@@ -56,6 +60,12 @@ export class TableComponent implements OnInit {
     this.deleted = deleted;
     this.readAll();
     this.router.navigateByUrl('/table');
+  }
+
+  callLogout() {
+    this.isLoggedIn = false;
+    this.auth.logout();
+    this.router.navigate(['/'])
   }
 
   changeRoute(){

@@ -35,12 +35,13 @@ export class LoginComponent {
               (response) => {
                   this.auth.login(response);
                   this.router.navigateByUrl('/startseite');
-                  
+
               }
-              
+
             )
           } else {
             console.log('kein Login - Nutzername und/oder Passwort stimmen nicht')
+            this.router.navigate(['/users'])
           }
       },
       error: (err) => {
@@ -48,7 +49,7 @@ export class LoginComponent {
         this.router.navigate(['/users'])
       },
       complete: () => console.log('login completed')
-      
+
 
     }
     )

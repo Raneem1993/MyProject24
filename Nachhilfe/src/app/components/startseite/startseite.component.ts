@@ -34,10 +34,10 @@ export class StartseiteComponent{
     })
    }
 
- 
+
   isLoggedin(): boolean {
     return this.loggedIn;
-    
+
   }
 
   callLogin() {
@@ -47,7 +47,7 @@ export class StartseiteComponent{
   callLogout() {
     this.isLoggedIn = false;
     this.auth.logout();
-    this.router.navigate(['/users/login'])
+    this.router.navigate(['/'])
   }
 
 changeRoute(){

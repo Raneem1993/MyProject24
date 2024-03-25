@@ -23,9 +23,16 @@
   opacity: 1;
   cursor: pointer;
 }
+mat-icon{
+  color:rgb(212, 64, 212);
+}
+mat-card-title{
+  color:rgb(60, 21, 60);
+}
 
 mat-card {
   margin: 5% 20%;
+  background-color: rgb(210, 190, 212,0.729);
 }
 
 .full-width {

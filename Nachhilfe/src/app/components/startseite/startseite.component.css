@@ -13,9 +13,25 @@
   box-shadow: 0 9px #999;
   float:right;
   position: relative;
-  bottom: -.10em;
-  left: -6.4em;
+  bottom: -.10rem;
+  left: -6.4rem;
 
+}
+.redirect-button2{
+  display: inline-block;
+  padding:15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #936bca;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  position:relative;
+  bottom: -.10em;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  right:-6.4rem;
 }
 .redirect-button:hover{
   opacity: 1;

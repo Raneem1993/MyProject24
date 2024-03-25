@@ -1,7 +1,7 @@
 <body>
   <h1>Light Nachhilfe</h1>
   <div>
-    <button class="redirect-button"  [routerLink]="'users/login'"> anmeldung
+    <button class="redirect-button" [routerLink]="'users/login'"> anmeldung
     </button>
   </div>
   <div class="object-fit"><img src="../assets/images/schule.jpeg" alt="schule logo"/></div>
@@ -12,18 +12,6 @@
         [opened]="(isHandset$ | async) === false">
     </mat-sidenav>
     <mat-sidenav-content>
-      <mat-toolbar color="primary" class="flex">
-        <button class="left"
-          type="button"
-          aria-label="Toggle sidenav"
-          mat-icon-button
-          *ngIf="isHandset$ | async">
-        </button>
-        <button *ngIf="!isLoggedIn" mat-icon-button class="right" (click)="callLogin()">
-          <mat-icon>login</mat-icon>
-        </button>
-       
-      </mat-toolbar>
       <!-- Add Content Here -->
       <router-outlet></router-outlet>
     </mat-sidenav-content>

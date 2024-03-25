@@ -4,7 +4,7 @@
   <div class="table-responsive">
     <table class="m-3 table table-striped table-hover">
       <caption>Alle <code>Schüler</code></caption>
-      
+
       <thead>
         <tr>
           <th scope="col ">Nr</th>
@@ -13,7 +13,7 @@
           <th scope="col ">E-Mail</th>
           <th scope="col ">Wohnadresse</th>
           <th scope="col ">Kurse</th>
-          <th scope="col ">Bearbeiten</th> 
+          <th scope="col ">Bearbeiten</th>
         </tr>
       </thead>
       <tbody>
@@ -26,7 +26,7 @@
           <td>{{ student.kurse }}</td>
           <td>
             <a [routerLink]="['/student', student._id]"> <span class= "bi bi-pencil-square px-5"></span></a>
-           
+
             <span (click)="delete(student._id)" class=" bi bi-trash px-5 ">löschen</span>
           </td>
         </tr>
@@ -42,5 +42,10 @@
 <div>
   <button class="redirect-button" (click)="changeRoute()">züruck zur Startseite !
   </button>
-</div>  
+</div>
+<div>
+  <button class="redirect-button2" (click)="callLogout()">Logout
+  </button>
+</div>
+
 

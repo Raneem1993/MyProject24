@@ -3,3 +3,9 @@ Wenn man auf den "Anmeldung" Button drückt, wird man einen Anmelgungsformular b
 Aber wenn der "Nutzer" noch nicht im Datenbank registriert ist, dann bekommt man einen Registrierungsformular.
 <img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 50 24" src="https://github.com/Raneem1993/MyProject24/assets/92716308/9dd4c9ad-b1ec-4cb7-a734-34cccc3d70ed">
 <img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 54 19" src="https://github.com/Raneem1993/MyProject24/assets/92716308/97b299e4-8b4c-439f-b29d-5f50d87ba580">
+Die Startseite sieht so aus:
+<img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 50 53" src="https://github.com/Raneem1993/MyProject24/assets/92716308/46792207-d413-40ee-b8aa-a235db46e427">
+Wenn man auf dn "Zur Schüler Übersicht" drückt dann wird man zur Schüler Tabelle Seite weitergeleitet, wo wir den Möglichkeit haben, alle Schüler zu sehen "Read" und einen neuen Schüler zu erstellen und speichern "Create" oder die Schüler Daten zu aktualisieren "update" oder die Schüler Daten zu löschen.
+<img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 03" src="https://github.com/Raneem1993/MyProject24/assets/92716308/42e76c20-8e3a-4dcb-ad5d-353d96bbf221">
+<img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 17" src="https://github.com/Raneem1993/MyProject24/assets/92716308/cfff1917-655c-454a-9659-2eef84895968">
+<img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 27" src="https://github.com/Raneem1993/MyProject24/assets/92716308/d38a2663-cb64-4b9c-9e75-26aa2de8fa6e">

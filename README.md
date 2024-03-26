@@ -9,6 +9,8 @@ Wenn man auf dn "Zur Schüler Übersicht" drückt dann wird man zur Schüler Tab
 <img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 03" src="https://github.com/Raneem1993/MyProject24/assets/92716308/42e76c20-8e3a-4dcb-ad5d-353d96bbf221">
 <img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 17" src="https://github.com/Raneem1993/MyProject24/assets/92716308/cfff1917-655c-454a-9659-2eef84895968">
 <img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 27" src="https://github.com/Raneem1993/MyProject24/assets/92716308/d38a2663-cb64-4b9c-9e75-26aa2de8fa6e">
-#Technologien:
+
+
+Technologien:
 
 Angular CLI, Typescript, Node js, Javascript, Mongo DB Compass und Atlas.

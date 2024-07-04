@@ -10,8 +10,14 @@ Die Startseite sieht so aus:
 Wenn man auf dn "Zur Schüler Übersicht" drückt dann wird man zur Schüler Tabelle Seite weitergeleitet, wo wir den Möglichkeit haben, alle Schüler zu sehen "Read" und einen neuen Schüler zu erstellen und speichern "Create" oder die Schüler Daten zu aktualisieren "update" oder die Schüler Daten zu löschen.
 <img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 31 55" src="https://github.com/Raneem1993/MyProject24/assets/92716308/e94002e5-16ee-49b1-931a-e45b4fa2252e">
 <img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 32 43" src="https://github.com/Raneem1993/MyProject24/assets/92716308/b35debf3-6fa1-44cd-bfb5-cc1f4a9d1908">
+
+Und wenn Nutzer neue Daten addieren wird, dann bekommt er das folgenden Dialog Box um zu bestätigen:
+
 <img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 52 22" src="https://github.com/Raneem1993/MyProject24/assets/92716308/0bc31b5d-b703-4bef-8c75-75eef12edddd">
-<img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 32 43" src="https://github.com/Raneem1993/MyProject24/assets/92716308/87a50847-6d24-4f80-86a4-f4552ada6242">
+
+Der Nutzer kann auch die Daten Aktualisieren:
+
+<img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 32 15" src="https://github.com/Raneem1993/MyProject24/assets/92716308/3488d8a9-d94c-4511-b847-eed5d7bbb7bc">
 
 
 

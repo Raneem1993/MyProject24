@@ -37,12 +37,12 @@ export class AuthService {
 
   loginUser(username: string, password: string ): Observable<any>{
     return this.http.post(this.baseUrl + '/users/login', { username: username, password: password }, {observe: 'response'});
-    ;
+    
   }
 
   isLoggedin(): boolean {
     return this.loggedIn;
-    
+
   }
 
   login(user: User): void {
@@ -51,7 +51,7 @@ export class AuthService {
     this.user = user;
     this.userChange.next(this.user);
     console.log('login() : ', this.user);
-    
+
   }
 
   logout(): void {

@@ -3,17 +3,19 @@
 
 }
 
-
-mat-card-title{
+title{
   color:rgb(60, 21, 60);
-}
-mat-card{
-  background-color: rgb(210, 190, 212,0.729);
 }
 
 mat-icon{
   color:rgb(212, 64, 212);
 }
+
+mat-card {
+  margin: 5% 10%;
+  background-color: rgb(210, 190, 212,0.729);
+}
+
 
 .shipping-card {
   min-width: 120px;
@@ -24,24 +26,48 @@ mat-icon{
   color: rgb(184, 68, 229);
 }
 
-.mat-radio-button {
-  display: block;
-  margin: 5px 0;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
+input{
+  background-color:white;
+  width: 85%;
+  height: 40px;
+  margin-left: 20px;
 
 }
-
-.col {
-  flex: 1;
-  margin-right: 20px;
+label{
+  color: rgb(124, 0, 124);
+  font-size: 18px;
+  margin-left: 20px;
+}
+header {
+  margin-bottom: 3%;
 
 }
 
-.col:last-child {
-  margin-right: 0;
-
+h1{
+ margin-left: 20px;
+ color:rgb(60, 21, 60);
 }
+
+a{
+  color:rgb(60, 21, 60) ;
+  margin-left: 60rem;
+}
+
+.mat-raised-button{
+  background-color: blueviolet;
+  color: beige;
+  opacity: 1;
+  cursor: pointer;
+  height: 40px;
+  width: 25%;
+  margin-left: 15px;
+  border-radius: 40px;
+}
+select{
+  width: 85%;
+  height: 40px;
+  margin-left: 20px;
+}
+
+
+

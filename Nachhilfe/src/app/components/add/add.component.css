@@ -5,6 +5,7 @@
   width: 400rem;
   height:40rem;
   line-height: 60px;
+  margin-top: 60px;
 }
 
 
@@ -14,11 +15,11 @@
 }
 
 .btn-success{
- background-color: rgb(196, 123, 152);
- 
+ background-color: rgb(196, 73, 117);
+
 
 }
 
 .btn-secondary{
-  background-color: rgb(196, 123, 152);
+  background-color: rgb(196, 73, 117);
 }

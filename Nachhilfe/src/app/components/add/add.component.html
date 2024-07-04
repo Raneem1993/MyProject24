@@ -1,35 +1,36 @@
-<div class="container">
-  <h2 class="my-4">Neu Schüler addieren</h2>
-  <div class="mb-4 mb-row">
-    <input type="text" class="form-control" id="idVorname" placeholder="Vorname" [formControl]="firstnameFC"
+<main>
+<div  tabindex= "0" class="container">
+  <h2 class="my-4" tabindex= "0">Neu Schüler addieren</h2>
+  <div class="mb-4 mb-row" role="group">
+    <input type="text" tabindex= "0" class="form-control" id="idVorname" placeholder="Vorname" [formControl]="firstnameFC"
       [class]="firstnameFC.touched ? firstnameFC.valid ? 'is-valid' : 'is-invalid' : ''">
     <div class="invalid-feedback">
       Please provide a firstname.
     </div>
   </div>
   <div class="mb-4 mb-row">
-    <input type="text" class="form-control" id="idLastname" placeholder="Nachname" [formControl]="lastnameFC"
+    <input type="text" tabindex= "0" class="form-control" id="idLastname" placeholder="Nachname" [formControl]="lastnameFC"
       [class]="lastnameFC.touched ? lastnameFC.valid ? 'is-valid' : 'is-invalid' : ''">
     <div class="invalid-feedback">
       Please provide a lastname.
     </div>
   </div>
   <div class="mb-4 mb-row">
-    <input type="email" class="form-control" id="staticEmail" placeholder="email@example.com" [formControl]="emailFC"
+    <input type="email" tabindex= "0" class="form-control" id="staticEmail" placeholder="email@example.com" [formControl]="emailFC"
       [class]="emailFC.touched ? emailFC.valid ? 'is-valid' : 'is-invalid' : ''">
     <div class="invalid-feedback">
       Please provide a valid email address.
     </div>
   </div>
   <div class="mb-4 mb-row">
-    <input type="text" class="form-control" id="idAddress" placeholder="address"[formControl]="addressFC"
+    <input type="text" tabindex= "0" class="form-control" id="idAddress" placeholder="address"[formControl]="addressFC"
       [class]="addressFC.touched ? addressFC.valid ? 'is-valid' : 'is-invalid' : ''">
     <div class="invalid-feedback">
       Please provide a valid  Wohnaddress.
     </div>
   </div>
   <div class="mb-4 mb-row">
-    <input type="text" class="form-control" id="kurse" placeholder="kurse"[formControl]="kurseFC"
+    <input type="text" tabindex= "0" class="form-control" id="kurse" placeholder="kurse"[formControl]="kurseFC"
       [class]="kurseFC.touched ? kurseFC.valid ? 'is-valid' : 'is-invalid' : ''">
     <div class="invalid-feedback">
       Please provide a valid  Wohnaddress.
@@ -38,51 +39,53 @@
 
   <div class="row">
     <div class="col">
-    <button type="submit" class="w-100 btn btn-success" (click)="student(content)">Addieren</button>
+    <button tabindex="0" type="submit" class="w-100 btn btn-success" (click)="student(content)"  aria-label="Add student" role="button">Addieren</button>
     </div>
     <div class="col">
-    <button type="button" class="w-100 btn btn-secondary" (click)="cancel()">Cancel</button>
+    <button tabindex="0" type="button" class="w-100 btn btn-secondary" (click)="cancel()" aria-label="Cancel" role="button">Cancel</button>
     </div>
   </div>
 </div>
-
-<ng-template #content let-modal>
-  <div class="modal-header">
-    <h6 class="modal-title" id="modal-basic-title">neu Schüler wurde addiert</h6>
+</main>
+<ng-template tabindex="0" #content let-modal>
+  <div class="modal-header" tabindex="0" >
+    <h4 class="modal-title" tabindex="0" id="modal-basic-title">neu Schüler wurde addiert</h4>
     <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
-  <div class="modal-body">
-    <table class="table">
+  <div class="modal-body" tabindex="0" >
+    <table class="table" role="table" tabindex= "0">
+      <caption tabindex="0">Schüler Informationen</caption>
       <tbody>
         <tr>
-          <td>firstname</td>
+          <th scope="row">firstname</th>
           <td>:</td>
-          <td>{{ firstnameFC.value }}</td>
+          <td role="cell">{{ firstnameFC.value }}</td>
         </tr>
         <tr>
-          <td>lastname</td>
+          <th scope="row">Lastname</th>
           <td>:</td>
-          <td>{{ lastnameFC.value }}</td>
+          <td role="cell">{{ lastnameFC.value }}</td>
         </tr>
         <tr>
-          <td>email</td>
+          <th scope="row">Email</th>
           <td>:</td>
-          <td>{{ emailFC.value }}</td>
+          <td role="cell">{{ emailFC.value }}</td>
         </tr>
         <tr>
-          <td>address</td>
+          <th scope="row">Address</th>
           <td>:</td>
-          <td>{{ addressFC.value }}</td>
+          <td role="cell">{{ addressFC.value }}</td>
         </tr>
         <tr>
-          <td>kurse</td>
+          <th scope="row">Kurse</th>
           <td>:</td>
-          <td>{{ kurseFC.value }}</td>
+          <td role="cell">{{ kurseFC.value }}</td>
         </tr>
       </tbody>
     </table>
   </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Close</button>
+  <div class="modal-footer" tabindex= "0">
+    <button type="button"  tabindex= "0" class="btn btn-outline-dark" (click)="modal.close('Save click')" aria-label="Close" role="button">Close</button>
   </div>
 </ng-template>
+

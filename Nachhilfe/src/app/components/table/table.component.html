@@ -1,51 +1,51 @@
-<div *ngIf="!deleted"  class="container mt-3">
-  <a [routerLink]="['/students']"><i class="bi bi-person-plus-fill">neu Schüler</i></a>
-  <h2 class="m-3">Schüler Daten</h2>
-  <div class="table-responsive">
-    <table class="m-3 table table-striped table-hover">
-      <caption>Alle <code>Schüler</code></caption>
 
-      <thead>
-        <tr>
-          <th scope="col ">Nr</th>
-          <th scope="col ">Vorname</th>
-          <th scope="col ">Nachname</th>
-          <th scope="col ">E-Mail</th>
-          <th scope="col ">Wohnadresse</th>
-          <th scope="col ">Kurse</th>
-          <th scope="col ">Bearbeiten</th>
+<div *ngIf="!deleted"  class="container mt-3">
+  <a [routerLink]="['/students']"><i class="bi bi-person-plus-fill" aria-label="Neuer Schüler" tabindex="0">neu Schüler</i></a>
+  <h2 class="m-3" tabindex="0">Schüler Daten</h2>
+  <div class="table-responsive">
+    <table class="m-3 table table-striped table-hover" role="table">
+      <thead scope="row">
+        <tr tabindex="0">
+          <th scope="col " role="columnheader">Nr</th>
+          <th scope="col " role="columnheader">Vorname</th>
+          <th scope="col " role="columnheader">Nachname</th>
+          <th scope="col " role="columnheader">E-Mail</th>
+          <th scope="col " role="columnheader">Wohnadresse</th>
+          <th scope="col " role="columnheader">Kurse</th>
+          <th scope="col " role="columnheader">Bearbeiten</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody role="rowgroup" tabindex="0">
         <tr *ngFor="let student of students; let i=index; ">
-          <td>{{ i+1 }}</td>
-          <td>{{ student.firstname }}</td>
-          <td>{{ student.lastname }}</td>
-          <td>{{ student.email }}</td>
-          <td>{{ student.address }}</td>
-          <td>{{ student.kurse }}</td>
+          <td role="cell" >{{ i+1 }}</td>
+          <td role="cell" >{{ student.firstname }}</td>
+          <td role="cell" >{{ student.lastname }}</td>
+          <td role="cell" >{{ student.email }}</td>
+          <td role="cell" >{{ student.address }}</td>
+          <td role="cell" >{{ student.kurse }}</td>
           <td>
-            <a [routerLink]="['/student', student._id]"> <span class= "bi bi-pencil-square px-5"></span></a>
-
-            <span (click)="delete(student._id)" class=" bi bi-trash px-5 ">löschen</span>
+            <a [routerLink]="['/student', student._id]"> <span class= "bi bi-pencil-square px-5" tabindex="0" aria-label="Bearbeiten" role="link"></span></a>
+            <span  (click)="delete(student._id)"  tabindex="0" class=" bi bi-trash px-5 " aria-label="Löschen" role="trash-löschen">löschen</span>
           </td>
         </tr>
       </tbody>
-
     </table>
   </div>
 </div>
-<div *ngIf="deleted" class=" container mt-3 ">
-  <h3>Datensatz wurde gelöscht!</h3>
-  <button type="button" class="btn btn-secondary" (click)="reload(false)">Zurück zur Tabelle</button>
+  <div *ngIf="deleted" class=" container mt-3 ">
+  <h3 tabindex="0">Datensatz wurde gelöscht!</h3>
+  <button type="button" tabindex="0"  class="btn btn-secondary" (click)="reload(false)" aria-label="Zurück zur Tabelle" role="button">Zurück zur Tabelle</button>
 </div>
 <div>
-  <button class="redirect-button" (click)="changeRoute()">züruck zur Startseite !
+  <button class="mat-raised-button" tabindex="0" (click)="changeRoute()" aria-label="Zurück zur Startseite" role="button">züruck zur Startseite !
   </button>
-</div>
-<div>
-  <button class="redirect-button2" (click)="callLogout()">Logout
-  </button>
-</div>
+  <div>
+    <button class="mat-raised-button2" tabindex="0" (click)="callLogout()" aria-label="Logout" role="button">Logout
+    </button>
+  </div>
+
+
+
+
 
 

@@ -7,7 +7,16 @@ h1{
 
 }
 
-.redirect-button{
+.mat-raised-button{
+  color: beige;
+  margin-left: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #936bca;
+  float:right;
+  position: relative;
+  bottom: -24.20em;
+  left: -7.4em;
   display: inline-block;
   padding: 15px 25px;
   font-size: 24px;
@@ -15,21 +24,12 @@ h1{
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #936bca;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  float:right;
-  position: relative;
-  bottom: -24.20em;
-  left: -6.4em;
-
 }
-.redirect-button:hover{
+.mat-raised-button:hover{
   opacity: 1;
   cursor: pointer;
 }
+
 
 
 .object-fit img{

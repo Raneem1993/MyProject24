@@ -1,7 +1,7 @@
-<h1 mat-dialog-title>{{ data.headline }}</h1>
-<div mat-dialog-content>
+<h1 mat-dialog-title tabindex="0">{{ data.headline }}</h1>
+<div mat-dialog-content tabindex="0">
   {{ data.info }}
 </div>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+<div mat-dialog-actions tabindex="0">
+  <button type="button" mat-button mat-dialog-close cdkFocusInitial  tabindex="0">Ok</button>
 </div>

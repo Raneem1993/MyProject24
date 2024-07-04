@@ -1,33 +1,37 @@
+
 <form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
-  <mat-card class="shipping-card">
-    <mat-card-header>
-      <mat-card-title class="card-color">Login</mat-card-title>
-    </mat-card-header>
+  <mat-card tabindex="0" class="shipping-card">
+    <header>
+      <mat-card-title class="card-color" tabindex="0">Login</mat-card-title><p>
+        <title>Loginformular</title>
+    </header>
     <mat-card-content>
       <p>
-        <mat-form-field class="full-width">
-          <mat-label>Nutzername</mat-label>
-          <input matInput placeholder="Nutzername" formControlName="username">
-          <mat-icon matSuffix>person</mat-icon>
-          <mat-error *ngIf="loginForm.controls['username'].hasError('required')">
+        <fieldset class="full-width">
+          <label for="username"  tabindex="0" aria-label="Nutzername">Nutzername</label><p></p>
+          <input matInput tabindex="0" class="input" id="username" placeholder="Nutzername" formControlName="username" >
+          <mat-icon matSuffix>person</mat-icon><p>
+          <mat-error tabindex="0" *ngIf="loginForm.controls['username'].hasError('required')">
             Nutzername <strong>erforderlich</strong>
-          </mat-error>
-        </mat-form-field>
-      </p>
-      <p>
-        <mat-form-field class="full-width" >
-          <mat-label>Passwort</mat-label>
-          <input matInput placeholder="Passwort" formControlName="password" [type]="hide ? 'password' : 'text'">
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-            [attr.aria-pressed]="hide">
+          </mat-error><p></p>
+          <label for="password" tabindex="0" aria-label="Passwort">Passwort</label><p></p>
+          <input matInput tabindex="0" id="password" placeholder="Passwort" formControlName="password" [type]="hide ? 'password' : 'text'">
+          <button tabindex="0" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide" for="password">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
           </button>
-        </mat-form-field>
-      </p>
+        </fieldset>
     </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button color="primary" type="submit"(ngSubmit)="onSubmit()">Login</button>
-    </mat-card-actions>
+    <p></p>
+    <section>
+      <button class="mat-raised-button" id= "login" type="submit"  tabindex="0" (ngSubmit)="onSubmit()">Login</button>
+    </section>
   </mat-card>
 </form>
+<footer>
+<a href="/" tabindex="0" role="link" ><strong>Zurück</strong></a>
+<p></p>
+<a href="/users"  tabindex="0" role="link"><strong>Zur Registrieungsformular</strong></a>
+</footer>
+
 

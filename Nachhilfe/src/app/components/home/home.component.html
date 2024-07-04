@@ -1,10 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Nachhilfe Schule - kurse und Anmeldung</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
 <body>
-  <h1>Light Nachhilfe</h1>
-  <div>
-    <button class="redirect-button" [routerLink]="'users/login'"> anmeldung
-    </button>
-  </div>
-  <div class="object-fit"><img src="../assets/images/schule.jpeg" alt="schule logo"/></div>
+  <h1 tabindex="0">Light Nachhilfe</h1>
+  <section>
+    <button class="mat-raised-button" typ="submit" [routerLink]="'users/login'"> anmeldung</button>
+  </section>
+  <div class="object-fit" ><img src="../assets/images/schule.jpeg" alt="schule logo, drei personen mit einem Buch und Lernmateriale " tabindex="0"/></div>
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #drawer class="sidenav" fixedInViewport
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"

@@ -1,18 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
 <app-cards></app-cards>
-<mat-sidenav-container class="sidenav-container">
-
-      <span *ngIf="isLoggedIn" class="menu-container">
+<mat-sidenav-container class="sidenav-container" tabindex="0">
+      <span *ngIf="isLoggedIn" class="menu-container" tabindex="0">
         <a routerLink="/users">{{username}}</a>
      </span>
-
-<div>
-  <button class="redirect-button" (click)="changeRoute()">zur Schüler Übersicht Tabelle
+     <body>
+<section>
+  <button class="mat-raised-button" tabindex="0" type="button" (click)="changeRoute()" >zur Schüler Übersicht Tabelle
   </button>
-</div>
-<div>
-  <button class="redirect-button2" (click)="callLogout()">Logout
+</section>
+<section>
+  <button class="mat-raised-button2" tabindex="0" (click)="callLogout()">Logout
   </button>
-</div>
+</section>
+</body>
 
 
 

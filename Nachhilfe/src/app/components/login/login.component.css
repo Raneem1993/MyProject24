@@ -26,9 +26,12 @@
 mat-icon{
   color:rgb(212, 64, 212);
 }
-mat-card-title{
-  color:rgb(60, 21, 60);
+
+.card-color{
+  color:rgb(60, 29, 60);
+  font-size: 30px;
 }
+
 
 mat-card {
   margin: 5% 20%;
@@ -37,21 +40,52 @@ mat-card {
 
 .full-width {
   width: 100%;
+
+}
+ input{
+  width: 85%;
+  height: 40px;
+
+}
+input::after{
+  color:rgb(105, 29, 29);
 }
 
-mat-card-header {
+label{
+  color: rgb(98, 5, 98);
+  font-size: 20px;
+}
+
+
+header {
   margin-bottom: 3%;
+  margin-top: 3%;
+  margin-left: 15px;
+}
+.mat-raised-button{
+  background-color: rgb(164, 8, 143);
+  color: beige;
+  opacity: 1;
+  cursor: pointer;
+  height: 40px;
+  width: 25%;
+  margin-left: 15px;
+  border-radius: 30px;
+}
+
+strong{
+  color:rgb(12, 74, 12);
+}
+a{
+  margin-left: 65rem;
+  font-size: large;
+  
+}
+
+mat-error{
+  color:rgb(123, 2, 2);
 }
 
 
-mat-card {
-  margin: 5% 20%;
-}
 
-.full-width {
-  width: 100%;
-}
 
-mat-card-header {
-  margin-bottom: 3%;
-}

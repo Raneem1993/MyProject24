@@ -1,6 +1,6 @@
 @import url('../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 .bi-person-plus-fill{
-  color:blue;
+  color:#441883;
   float:right;
   position: auto;
   font-size: medium;
@@ -8,19 +8,19 @@
 }
 
 .bi-trash{
-  color:red;
+  color:rgb(146, 25, 25);
 }
 
 .bi-pencil-square{
-  color:blue;
+  color:rgb(44, 44, 158);
 }
 
 h2{
-  color:#6623c5;
+  color:#4602a7;
 }
 
 
-.redirect-button{
+.mat-raised-button{
   display: inline-block;
   padding:15px 25px;
   font-size: 24px;
@@ -31,7 +31,6 @@ h2{
   background-color: #936bca;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
   float:right;
   position:relative;
   bottom: -.10rem;
@@ -39,7 +38,7 @@ h2{
 
 
 }
-.redirect-button2{
+.mat-raised-button2{
   display: inline-block;
   padding:15px 25px;
   font-size: 24px;
@@ -47,15 +46,10 @@ h2{
   background-color: #936bca;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
   position:relative;
   bottom: -.10rem;
   text-decoration: none;
   outline: none;
   color: #fff;
   right:-6.4rem;
-}
-.redirect-button:hover{
-  opacity: 1;
-  cursor: pointer;
 }

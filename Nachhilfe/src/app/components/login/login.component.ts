@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, ElementRef} from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../shared/auth.service';
@@ -6,7 +6,8 @@ import { AuthService } from '../../shared/auth.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+
 })
 
 export class LoginComponent {
@@ -17,7 +18,20 @@ export class LoginComponent {
     password: [null, Validators.required]
   });
 
-  constructor(private fb: FormBuilder, private auth: AuthService, private router: Router) {}
+
+
+  constructor(private fb: FormBuilder, private auth: AuthService, private router: Router,private element: ElementRef) {}
+
+  ngOnInit() {
+    this.loginForm.valueChanges.subscribe(() => {
+      setTimeout(() => {
+        const firstFocusableElement = this.element.nativeElement.querySelector('[tabindex]:not([tabindex="-1"])');
+        if (firstFocusableElement) {
+          firstFocusableElement.focus();
+        }
+      }, 0);
+    });
+  }
 
   onSubmit(): void {
     const values = this.loginForm.value;
@@ -53,10 +67,18 @@ export class LoginComponent {
 
     }
     )
-
   }
 
 }
+
+
+
+
+
+
+
+
+
 
 
 

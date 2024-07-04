@@ -1,5 +1,22 @@
-Mein Projekt hat Frontend und Backend . Frontend wurde in Angular entwickelt und das Backend mit Node.js.Frontend wird durch den Befehl "npm start" oder "ng serve" im Terminal ausgeführt, dann wird Frontend im localhost:4200 aufgerufen und gezeigt. Backend wird durch den Befehl "node server.js" in einer andere Terminal Seite ausgeführt,dann wird Backend im localhost:3000 aufgerufen. Die Anwendung geht es um eine "Nachhilfe" Webseite, wo man sich einloggen oder sich registrieren kann.<img width="1425" alt="Bildschirmfoto 2024-07-04 um 18 20 52" src="https://github.com/Raneem1993/MyProject24/assets/92716308/f08e8aec-2b08-4d09-99f8-59ebb4473067">
+Mein Projekt hat Frontend und Backend . Frontend wurde in Angular entwickelt und das Backend mit Node.js.Frontend wird durch den Befehl "npm start" oder "ng serve" im Terminal ausgeführt, dann wird Frontend im localhost:4200 aufgerufen und gezeigt. Backend wird durch den Befehl "node server.js" in einer andere Terminal Seite ausgeführt,dann wird Backend im localhost:3000 aufgerufen. 
+
+Die Anwendung geht es um eine "Nachhilfe" Webseite, wo man sich einloggen oder sich registrieren kann.<img width="1425" alt="Bildschirmfoto 2024-07-04 um 18 20 52" src="https://github.com/Raneem1993/MyProject24/assets/92716308/f08e8aec-2b08-4d09-99f8-59ebb4473067">
 Wenn man auf den "Anmeldung" Button drückt, wird man einen Anmelgungsformular bekommen.Wenn der "Nutzer" schon im Datenbank registriert ist dann wurde auf die Starseite weitergeleitet.
+
+Accessability:
+
+- Alle Elemente sind Focusable und der Screen reader kann sie lesen.
+- Es wurde noch ein Constract geachtet:Die Website hat einen ausreichenden Kontrast zwischen Text und Hintergrund, um eine gute Lesbarkeit zu gewährleisten.
+- Nutzer kann auch zwischen den Elemente über den Tatatur wechseln.
+- Der Dokument hat auch sprache.
+- Non-text Content: Alle Bilder auf der Website haben alternative Texte, die durch die alt-Attribut angegeben werden.
+- Info and Relationships: Die Website verwendet semantisches Markup, um die Struktur und die Beziehungen zwischen den Elementen zu beschreiben.
+- Page Titled: Die Website hat einen eindeutigen Titel, der in der Titelleiste des Browsers angezeigt wird.
+- On Input: Die Website ändert nicht unerwartet, wenn der Benutzer Eingaben macht.
+- es gibt noch Skip-Link um Bereiche zu überspringen.
+- Info and Relationships: Die Website verwendet semantisches Markup, um die Struktur und die Beziehungen zwischen den Elementen zu beschreiben.
+
+
 Aber wenn der "Nutzer" noch nicht im Datenbank registriert ist, dann bekommt man einen Registrierungsformular.
 <img width="1423" alt="Bildschirmfoto 2024-07-04 um 18 20 02" src="https://github.com/Raneem1993/MyProject24/assets/92716308/d3dc86a4-f542-4c13-b023-a787084a591d">
 <img width="1425" alt="Bildschirmfoto 2024-07-04 um 18 21 23" src="https://github.com/Raneem1993/MyProject24/assets/92716308/f1654670-43a8-4131-8eba-7d5511dfb177">

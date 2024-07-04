@@ -8,9 +8,12 @@ Die Startseite sieht so aus:
 
 <img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 50 53" src="https://github.com/Raneem1993/MyProject24/assets/92716308/46792207-d413-40ee-b8aa-a235db46e427">
 Wenn man auf dn "Zur Schüler Übersicht" drückt dann wird man zur Schüler Tabelle Seite weitergeleitet, wo wir den Möglichkeit haben, alle Schüler zu sehen "Read" und einen neuen Schüler zu erstellen und speichern "Create" oder die Schüler Daten zu aktualisieren "update" oder die Schüler Daten zu löschen.
-<img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 03" src="https://github.com/Raneem1993/MyProject24/assets/92716308/42e76c20-8e3a-4dcb-ad5d-353d96bbf221">
-<img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 17" src="https://github.com/Raneem1993/MyProject24/assets/92716308/cfff1917-655c-454a-9659-2eef84895968">
-<img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 51 27" src="https://github.com/Raneem1993/MyProject24/assets/92716308/d38a2663-cb64-4b9c-9e75-26aa2de8fa6e">
+<img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 31 55" src="https://github.com/Raneem1993/MyProject24/assets/92716308/e94002e5-16ee-49b1-931a-e45b4fa2252e">
+<img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 32 43" src="https://github.com/Raneem1993/MyProject24/assets/92716308/b35debf3-6fa1-44cd-bfb5-cc1f4a9d1908">
+<img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 32 43" src="https://github.com/Raneem1993/MyProject24/assets/92716308/87a50847-6d24-4f80-86a4-f4552ada6242">
+
+
+
 
 
 Technologien:

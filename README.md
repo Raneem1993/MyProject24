@@ -9,6 +9,10 @@ Die Startseite sieht so aus:
 <img width="1433" alt="Bildschirm­foto 2024-03-26 um 19 50 53" src="https://github.com/Raneem1993/MyProject24/assets/92716308/46792207-d413-40ee-b8aa-a235db46e427">
 Wenn man auf dn "Zur Schüler Übersicht" drückt dann wird man zur Schüler Tabelle Seite weitergeleitet, wo wir den Möglichkeit haben, alle Schüler zu sehen "Read" und einen neuen Schüler zu erstellen und speichern "Create" oder die Schüler Daten zu aktualisieren "update" oder die Schüler Daten zu löschen.
 <img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 31 55" src="https://github.com/Raneem1993/MyProject24/assets/92716308/e94002e5-16ee-49b1-931a-e45b4fa2252e">
+
+Durch das klicken auf Papierkorb Button, wird den Datensatz gelöscht und wird das folgendes bekommen: 
+<img width="1426" alt="Bildschirmfoto 2024-07-04 um 19 00 03" src="https://github.com/Raneem1993/MyProject24/assets/92716308/1d3289cb-3e2d-4c41-b98b-565102bab359">
+
 <img width="1426" alt="Bildschirmfoto 2024-07-04 um 18 32 43" src="https://github.com/Raneem1993/MyProject24/assets/92716308/b35debf3-6fa1-44cd-bfb5-cc1f4a9d1908">
 
 Und wenn Nutzer neue Daten addieren wird, dann bekommt er das folgenden Dialog Box um zu bestätigen:

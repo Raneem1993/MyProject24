@@ -1,38 +1,38 @@
 
 <main class="d-flex min-vh-100">
   <fieldset class="container  mt-5">
-    <legend *ngIf="student" class="mb-4" tabindex="0">Eintrag von {{ student.firstname }} {{ student.lastname }} aktualisieren
+    <legend *ngIf="student" class="mb-4">Eintrag von {{ student.firstname }} {{ student.lastname }} aktualisieren
     </legend>
-    <legend *ngIf="!student" class="mb-4" tabindex="0">Eintrag aktualisieren</legend>
+    <legend *ngIf="!student" class="mb-4" >Eintrag aktualisieren</legend>
     <form [formGroup]="form" (ngSubmit)="update()">
       <div class="mb-3 row">
-        <label for="firstname" class="col-2 col-form-label" tabindex="0" >Vorname</label>
+        <label for="firstname" class="col-2 col-form-label">Vorname</label>
         <div class="col-10">
           <input  id="firstname" type="text"  tabindex="0" class="form-control" placeholder="Vorname"
           formControlName="firstnameControl" />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="lastname" class="col-2 col-form-label" tabindex="0" >Nachname</label>
+        <label for="lastname" class="col-2 col-form-label">Nachname</label>
         <div class="col-10">
           <input id="lastname" type="text"  tabindex="0" class="col-10 form-control"  placeholder="Nachname"
           formControlName="lastnameControl" />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="email" class="col-2 col-form-label" tabindex="0" >E-Mail</label>
+        <label for="email" class="col-2 col-form-label">E-Mail</label>
         <div class="col-10">
           <input type="email" tabindex="0" class="col-10 form-control" id="email" placeholder="E-Mail" formControlName="emailControl" />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="address" class="col-2 col-form-label" tabindex="0" >Adresse</label>
+        <label for="address" class="col-2 col-form-label">Adresse</label>
         <div class="col-10">
           <input type="text" tabindex="0" class="col-10 form-control" id="address" placeholder="Wohnadresse" formControlName="addressControl" />
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="kurse" class="col-2 col-form-label" tabindex="0" >Kurse</label>
+        <label for="kurse" class="col-2 col-form-label">Kurse</label>
         <div class="col-10">
           <input type="text" class="col-10 form-control" id="kurse" placeholder="kurse" formControlName="kurseControl" tabindex="0"/>
         </div>

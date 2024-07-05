@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-    <mat-card tabindex="0" class="shipping-card">
+    <mat-card  class="shipping-card">
       <header>
         <title>Registrieungsformular</title>
-        <h1 tabindex="0">Registrierung</h1>
+        <h1>Registrierung</h1>
       </header>
       <fieldset class="full-width">
-        <label tabindex="0" for="username" aria-label="Nutzername">Nutzername:</label><p>
+        <label  for="username">Nutzername:</label><p>
           <input  matInput  tabindex="0" class="input" type="text" placeholder="Nutzername"
             formControlName="username">
           <mat-icon matSuffix>person_add</mat-icon>
           <mat-error *ngIf="registerForm.controls['username'].hasError('required')">
           </mat-error><p>
-          <label for="password" tabindex="0">Passwort:</label><p>
+          <label for="password" >Passwort:</label><p>
           <input  matInput class="input"  tabindex="0" [type]="hide ? 'password' : 'text'" placeholder="Passwort"
             formControlName="password">
           <button tabindex="0" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
@@ -22,13 +22,13 @@
           </button>
           <mat-error *ngIf="registerForm.controls['password'].hasError('required')">
           </mat-error><p>
-          <label for="email" tabindex="0">Email Adresse:</label><p>
+          <label for="email">Email Adresse:</label><p>
           <input class="input" tabindex="0" placeholder="E-Mail" formControlName="email">
           <mat-icon matSuffix>email</mat-icon>
           <mat-error *ngIf="registerForm.controls['email'].hasError('required')">
           </mat-error><p>
-            <label for="role" tabindex="0">Rolle:</label> <mat-icon matSuffix>group</mat-icon><p>
-        <select  placeholder="Rolle" formControlName="role" aria-label="Rolle" tabindex="0">
+            <label for="role">Rolle:</label> <mat-icon matSuffix>group</mat-icon><p>
+        <select  placeholder="Rolle" formControlName="role" >
         <option *ngFor="let role of roles" [value]="role" aria-selected="false">
           {{ role }}
         </option>

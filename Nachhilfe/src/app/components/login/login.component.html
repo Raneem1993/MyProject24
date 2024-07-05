@@ -1,20 +1,20 @@
 
 <form [formGroup]="loginForm" novalidate (ngSubmit)="onSubmit()">
-  <mat-card tabindex="0" class="shipping-card">
+  <mat-card  class="shipping-card">
     <header>
-      <mat-card-title class="card-color" tabindex="0">Login</mat-card-title><p>
+      <mat-card-title class="card-color" >Login</mat-card-title><p>
         <title>Loginformular</title>
     </header>
     <mat-card-content>
       <p>
         <fieldset class="full-width">
-          <label for="username"  tabindex="0" aria-label="Nutzername">Nutzername</label><p></p>
+          <label for="username" >Nutzername</label><p></p>
           <input matInput tabindex="0" class="input" id="username" placeholder="Nutzername" formControlName="username" >
           <mat-icon matSuffix>person</mat-icon><p>
           <mat-error tabindex="0" *ngIf="loginForm.controls['username'].hasError('required')">
             Nutzername <strong>erforderlich</strong>
           </mat-error><p></p>
-          <label for="password" tabindex="0" aria-label="Passwort">Passwort</label><p></p>
+          <label for="password">Passwort</label><p></p>
           <input matInput tabindex="0" id="password" placeholder="Passwort" formControlName="password" [type]="hide ? 'password' : 'text'">
           <button tabindex="0" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
             [attr.aria-pressed]="hide" for="password">

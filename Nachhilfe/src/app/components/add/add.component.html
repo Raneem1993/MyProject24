@@ -47,14 +47,14 @@
   </div>
 </div>
 </main>
-<ng-template tabindex="0" #content let-modal>
-  <div class="modal-header" tabindex="0" >
-    <h4 class="modal-title" tabindex="0" id="modal-basic-title">neu Schüler wurde addiert</h4>
-    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+<ng-template  #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title"  id="modal-basic-title">neu Schüler wurde addiert</h4>
+    <button type="button" tabindex="0" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
   </div>
-  <div class="modal-body" tabindex="0" >
-    <table class="table" role="table" tabindex= "0">
-      <caption tabindex="0">Schüler Informationen</caption>
+  <div class="modal-body">
+    <table class="table" role="table">
+      <caption>Schüler Informationen</caption>
       <tbody>
         <tr>
           <th scope="row">firstname</th>
@@ -84,7 +84,7 @@
       </tbody>
     </table>
   </div>
-  <div class="modal-footer" tabindex= "0">
+  <div class="modal-footer">
     <button type="button"  tabindex= "0" class="btn btn-outline-dark" (click)="modal.close('Save click')" aria-label="Close" role="button">Close</button>
   </div>
 </ng-template>

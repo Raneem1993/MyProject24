@@ -1,11 +1,11 @@
 
 <div *ngIf="!deleted"  class="container mt-3">
   <a [routerLink]="['/students']"><i class="bi bi-person-plus-fill" aria-label="Neuer Schüler" tabindex="0">neu Schüler</i></a>
-  <h2 class="m-3" tabindex="0">Schüler Daten</h2>
+  <h2 class="m-3">Schüler Daten</h2>
   <div class="table-responsive">
     <table class="m-3 table table-striped table-hover" role="table">
       <thead scope="row">
-        <tr tabindex="0">
+        <tr >
           <th scope="col " role="columnheader">Nr</th>
           <th scope="col " role="columnheader">Vorname</th>
           <th scope="col " role="columnheader">Nachname</th>
@@ -15,7 +15,7 @@
           <th scope="col " role="columnheader">Bearbeiten</th>
         </tr>
       </thead>
-      <tbody role="rowgroup" tabindex="0">
+      <tbody role="rowgroup" >
         <tr *ngFor="let student of students; let i=index; ">
           <td role="cell" >{{ i+1 }}</td>
           <td role="cell" >{{ student.firstname }}</td>
@@ -33,7 +33,7 @@
   </div>
 </div>
   <div *ngIf="deleted" class=" container mt-3 ">
-  <h3 tabindex="0">Datensatz wurde gelöscht!</h3>
+  <h3 >Datensatz wurde gelöscht!</h3>
   <button type="button" tabindex="0"  class="btn btn-secondary" (click)="reload(false)" aria-label="Zurück zur Tabelle" role="button">Zurück zur Tabelle</button>
 </div>
 <div>

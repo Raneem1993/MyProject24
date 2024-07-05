@@ -22,16 +22,7 @@ export class LoginComponent {
 
   constructor(private fb: FormBuilder, private auth: AuthService, private router: Router,private element: ElementRef) {}
 
-  ngOnInit() {
-    this.loginForm.valueChanges.subscribe(() => {
-      setTimeout(() => {
-        const firstFocusableElement = this.element.nativeElement.querySelector('[tabindex]:not([tabindex="-1"])');
-        if (firstFocusableElement) {
-          firstFocusableElement.focus();
-        }
-      }, 0);
-    });
-  }
+
 
   onSubmit(): void {
     const values = this.loginForm.value;

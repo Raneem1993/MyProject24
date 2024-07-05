@@ -9,13 +9,17 @@
       <p>
         <fieldset class="full-width">
           <label for="username" >Nutzername</label><p></p>
-          <input matInput tabindex="0" class="input" id="username" placeholder="Nutzername" formControlName="username" >
+          <input matInput tabindex="0" class="input" id="username" placeholder="Nutzername" formControlName="username" aria-label="Nutzername"
+          aria-describedby="username-error"
+          autocomplete="username" >
           <mat-icon matSuffix>person</mat-icon><p>
           <mat-error tabindex="0" *ngIf="loginForm.controls['username'].hasError('required')">
             Nutzername <strong>erforderlich</strong>
           </mat-error><p></p>
           <label for="password">Passwort</label><p></p>
-          <input matInput tabindex="0" id="password" placeholder="Passwort" formControlName="password" [type]="hide ? 'password' : 'text'">
+          <input matInput tabindex="0" id="password" placeholder="Passwort" formControlName="password" [type]="hide ? 'password' : 'text'"  aria-label="Passwort"
+          aria-describedby="password-error"
+          autocomplete="current-password">
           <button tabindex="0" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
             [attr.aria-pressed]="hide" for="password">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -24,14 +28,15 @@
     </mat-card-content>
     <p></p>
     <section>
-      <button class="mat-raised-button" id= "login" type="submit"  tabindex="0" (ngSubmit)="onSubmit()">Login</button>
+      <button class="mat-raised-button" id= "login" type="submit" tabindex="0" (ngSubmit)="onSubmit()" role="button"
+      aria-label="Login">Login</button>
     </section>
   </mat-card>
 </form>
 <footer>
-<a href="/" tabindex="0" role="link" ><strong>Zurück</strong></a>
+<a href="/" tabindex="0" role="link" aria-label="Zurück zur Startseite"><strong>Zurück</strong></a>
 <p></p>
-<a href="/users"  tabindex="0" role="link"><strong>Zur Registrieungsformular</strong></a>
+<a href="/users"  tabindex="0" role="link" aria-label="Zur Registrierungsformular"><strong>Zur Registrieungsformular</strong></a>
 </footer>
 
 

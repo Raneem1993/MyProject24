@@ -9,7 +9,7 @@ Wenn man auf den "Anmeldung" Button drückt, wird man einen Anmelgungsformular b
 Accessability:
 
 - Alle Elemente sind Focusable und der Screen reader kann sie lesen.
-- Es wurde noch ein Constract geachtet:Die Website hat einen ausreichenden Kontrast zwischen Text und Hintergrund, um eine gute Lesbarkeit zu gewährleisten.
+- Es wurde noch ein auf Constract geachtet:Die Website hat einen ausreichenden Kontrast zwischen Text und Hintergrund, um eine gute Lesbarkeit zu gewährleisten.
 - Nutzer kann auch zwischen den Elemente über den Tatatur wechseln.
 - Der Dokument hat auch sprache.
 - Non-text Content: Alle Bilder auf der Website haben alternative Texte, die durch die alt-Attribut angegeben werden.
@@ -17,7 +17,6 @@ Accessability:
 - Page Titled: Die Website hat einen eindeutigen Titel, der in der Titelleiste des Browsers angezeigt wird.
 - On Input: Die Website ändert nicht unerwartet, wenn der Benutzer Eingaben macht.
 - es gibt noch Skip-Link um Bereiche zu überspringen.
-- Info and Relationships: Die Website verwendet semantisches Markup, um die Struktur und die Beziehungen zwischen den Elementen zu beschreiben.
 
 
 Aber wenn der "Nutzer" noch nicht im Datenbank registriert ist, dann bekommt man einen Registrierungsformular.

@@ -6,6 +6,7 @@ Die Anwendung geht es um eine "Nachhilfe" Webseite, wo man sich einloggen oder s
 
 Wenn man auf den "Anmeldung" Button drückt, wird man einen Anmelgungsformular bekommen.Wenn der "Nutzer" schon im Datenbank registriert ist dann wurde auf die Starseite weitergeleitet.
 
+
 Ausgesuchte WCAG 2.2 Erfolgskriterien:
 
 

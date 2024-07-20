@@ -6,18 +6,21 @@ Die Anwendung geht es um eine "Nachhilfe" Webseite, wo man sich einloggen oder s
 
 Wenn man auf den "Anmeldung" Button drückt, wird man einen Anmelgungsformular bekommen.Wenn der "Nutzer" schon im Datenbank registriert ist dann wurde auf die Starseite weitergeleitet.
 
-Accessability:
+Ausgesuchte WCAG 2.2 Erfolgskriterien:
 
-- Alle Elemente sind Focusable und der Screen reader kann sie lesen.
-- Es wurde noch ein auf Constract geachtet:Die Website hat einen ausreichenden Kontrast zwischen Text und Hintergrund, um eine gute Lesbarkeit zu gewährleisten.
-- Nutzer kann auch zwischen den Elemente über den Tatatur wechseln.
-- Der Dokument hat auch sprache.
-- Non-text Content: Alle Bilder auf der Website haben alternative Texte, die durch die alt-Attribut angegeben werden.
-- Info and Relationships: Die Website verwendet semantisches Markup, um die Struktur und die Beziehungen zwischen den Elementen zu beschreiben.
-- Page Titled: Die Website hat einen eindeutigen Titel, der in der Titelleiste des Browsers angezeigt wird.
-- On Input: Die Website ändert nicht unerwartet, wenn der Benutzer Eingaben macht.
-- es gibt noch Skip-Link um Bereiche zu überspringen.
-
+• 1.4.11 Non-text-Conrast: Die Website hat einen ausreichenden Kontrast zwischen Text und Hintergrund, um eine gute Lesbarkeit zu gewährleisten.
+• 2.4.3 Focus Order
+• 2.1 Keyboard Accessible.
+• 3.1.1 Language of page.
+• 1.1.1 Non-text Content: Alle Bilder auf der Website haben alternative Texte, die durch die alt-Attribut angegeben werden.
+• 1.3.1 Info and Relationships: Die Website verwendet semantisches Markup, um die Struktur und die Beziehungen zwischen den Elementen zu beschreiben.
+• 2.4.2 Page Titled: Die Website hat einen eindeutigen Titel, der in der Titelleiste des Browsers angezeigt wird.
+• 3.2.2 On Input: Die Website ändert nicht unerwartet, wenn der Benutzer Eingaben macht.
+• 2.4.9 Link Purpose: es gibt noch Skip-Link um Bereiche zu überspringen.
+• 1.4.1 Use of Color.
+• 2.4.6 Headings and Labels.
+• 3.3.1 Error Identification.
+• 4.1.1 Parsing.
 
 Aber wenn der "Nutzer" noch nicht im Datenbank registriert ist, dann bekommt man einen Registrierungsformular.
 

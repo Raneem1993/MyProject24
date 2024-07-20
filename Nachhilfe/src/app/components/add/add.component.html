@@ -1,59 +1,67 @@
 <main>
-<div  tabindex= "0" class="container">
-  <h2 class="my-4" tabindex= "0">Neu Schüler addieren</h2>
-  <div class="mb-4 mb-row" role="group">
-    <input type="text" tabindex= "0" class="form-control" id="idVorname" placeholder="Vorname" [formControl]="firstnameFC"
-      [class]="firstnameFC.touched ? firstnameFC.valid ? 'is-valid' : 'is-invalid' : ''">
-    <div class="invalid-feedback">
-      Please provide a firstname.
+  <div tabindex="0" class="container" role="main">
+    <h2 class="my-4" tabindex="0">Neu Schüler addieren</h2>
+    <div class="mb-4 mb-row" role="group">
+      <input type="text" tabindex="0" class="form-control" id="idVorname" placeholder="Vorname"
+        [formControl]="firstnameFC" [class]="firstnameFC.touched ? firstnameFC.valid ? 'is-valid' : 'is-invalid' : ''"
+        aria-label="Vorname" aria-describedby="firstname-error">
+      <div class="invalid-feedback" id="firstname-error">
+        <span style="color: rgb(123, 2, 2);">Please provide a firstname.</span>
+      </div>
+    </div>
+    <div class="mb-4 mb-row">
+      <input type="text" tabindex="0" class="form-control" id="idLastname" placeholder="Nachname"
+        [formControl]="lastnameFC" [class]="lastnameFC.touched ? lastnameFC.valid ? 'is-valid' : 'is-invalid' : ''"
+        aria-label="Nachname" aria-describedby="lastname-error">
+      <div class="invalid-feedback" id="lastname-error">
+        <span style="color: rgb(123, 2, 2);">Please provide a lastname.</span>
+      </div>
+    </div>
+    <div class="mb-4 mb-row">
+      <input type="email" tabindex="0" class="form-control" id="staticEmail" placeholder="email@example.com"
+        [formControl]="emailFC" [class]="emailFC.touched ? emailFC.valid ? 'is-valid' : 'is-invalid' : ''"
+        aria-label="Email" aria-describedby="email-error">
+      <div class="invalid-feedback" id="email-error">
+        <span style="color: rgb(123, 2, 2);"> Please provide a valid email address.</span>
+      </div>
+    </div>
+    <div class="mb-4 mb-row">
+      <input type="text" tabindex="0" class="form-control" id="idAddress" placeholder="address"
+        [formControl]="addressFC" [class]="addressFC.touched ? addressFC.valid ? 'is-valid' : 'is-invalid' : ''"
+        aria-label="Address" aria-describedby="address-error">
+      <div class="invalid-feedback" id="address-error">
+        <span style="color: rgb(123, 2, 2);">Please provide a valid Wohnaddress.</span>
+      </div>
+    </div>
+    <div class="mb-4 mb-row">
+      <input type="text" tabindex="0" class="form-control" id="kurse" placeholder="kurse" [formControl]="kurseFC"
+        [class]="kurseFC.touched ? kurseFC.valid ? 'is-valid' : 'is-invalid' : ''" aria-label="Kurse"
+        aria-describedby="kurse-error">
+      <div class="invalid-feedback" id="kurse-error">
+        <span style="color: rgb(123, 2, 2);">Please provide a valid Kurse.</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button tabindex="0" type="submit" class="w-100 btn btn-success" (click)="student(content)"
+          aria-label="Add student" role="button">Addieren</button>
+      </div>
+      <div class="col">
+        <button tabindex="0" type="button" class="w-100 btn btn-secondary" (click)="cancel()" aria-label="Cancel"
+          role="button">Cancel</button>
+      </div>
     </div>
   </div>
-  <div class="mb-4 mb-row">
-    <input type="text" tabindex= "0" class="form-control" id="idLastname" placeholder="Nachname" [formControl]="lastnameFC"
-      [class]="lastnameFC.touched ? lastnameFC.valid ? 'is-valid' : 'is-invalid' : ''">
-    <div class="invalid-feedback">
-      Please provide a lastname.
-    </div>
-  </div>
-  <div class="mb-4 mb-row">
-    <input type="email" tabindex= "0" class="form-control" id="staticEmail" placeholder="email@example.com" [formControl]="emailFC"
-      [class]="emailFC.touched ? emailFC.valid ? 'is-valid' : 'is-invalid' : ''">
-    <div class="invalid-feedback">
-      Please provide a valid email address.
-    </div>
-  </div>
-  <div class="mb-4 mb-row">
-    <input type="text" tabindex= "0" class="form-control" id="idAddress" placeholder="address"[formControl]="addressFC"
-      [class]="addressFC.touched ? addressFC.valid ? 'is-valid' : 'is-invalid' : ''">
-    <div class="invalid-feedback">
-      Please provide a valid  Wohnaddress.
-    </div>
-  </div>
-  <div class="mb-4 mb-row">
-    <input type="text" tabindex= "0" class="form-control" id="kurse" placeholder="kurse"[formControl]="kurseFC"
-      [class]="kurseFC.touched ? kurseFC.valid ? 'is-valid' : 'is-invalid' : ''">
-    <div class="invalid-feedback">
-      Please provide a valid  Wohnaddress.
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-    <button tabindex="0" type="submit" class="w-100 btn btn-success" (click)="student(content)"  aria-label="Add student" role="button">Addieren</button>
-    </div>
-    <div class="col">
-    <button tabindex="0" type="button" class="w-100 btn btn-secondary" (click)="cancel()" aria-label="Cancel" role="button">Cancel</button>
-    </div>
-  </div>
-</div>
 </main>
-<ng-template  #content let-modal>
+
+<ng-template #content let-modal>
   <div class="modal-header">
-    <h4 class="modal-title"  id="modal-basic-title">neu Schüler wurde addiert</h4>
-    <button type="button" tabindex="0" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    <h4 class="modal-title" id="modal-basic-title">neu Schüler wurde addiert</h4>
+    <button type="button" tabindex="0" class="btn-close" aria-label="Close"
+      (click)="modal.dismiss('Cross click')"></button>
   </div>
   <div class="modal-body">
-    <table class="table" role="table">
+    <table class="table" role="table" aria-label="Schüler Informationen">
       <caption>Schüler Informationen</caption>
       <tbody>
         <tr>
@@ -85,7 +93,7 @@
     </table>
   </div>
   <div class="modal-footer">
-    <button type="button"  tabindex= "0" class="btn btn-outline-dark" (click)="modal.close('Save click')" aria-label="Close" role="button">Close</button>
+    <button type="button" tabindex="0" class="btn btn-outline-dark" (click)="modal.close('Save click')"
+      aria-label="Close" role="button">Close</button>
   </div>
 </ng-template>
-

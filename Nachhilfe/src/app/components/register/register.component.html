@@ -9,13 +9,14 @@
       <fieldset class="full-width">
         <label  for="username">Nutzername:</label><p>
           <input  matInput  tabindex="0" class="input" type="text" placeholder="Nutzername"
-            formControlName="username">
+            formControlName="username" aria-label="Nutzername: Nutzername" aria-labelledby="username-label">
           <mat-icon matSuffix>person_add</mat-icon>
-          <mat-error *ngIf="registerForm.controls['username'].hasError('required')">
+          <mat-error *ngIf="registerForm.controls['username'].hasError('required')" id="username-error">
+            <span style="color: rgb(123, 2, 2);">Nutzername</span><strong>erforderlich</strong>
           </mat-error><p>
           <label for="password" >Passwort:</label><p>
           <input  matInput class="input"  tabindex="0" [type]="hide ? 'password' : 'text'" placeholder="Passwort"
-            formControlName="password">
+            formControlName="password" aria-label="Passwort: Passwort" aria-labelledby="password-label">
           <button tabindex="0" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
             [attr.aria-pressed]="hide">
             <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -23,7 +24,7 @@
           <mat-error *ngIf="registerForm.controls['password'].hasError('required')">
           </mat-error><p>
           <label for="email">Email Adresse:</label><p>
-          <input class="input" tabindex="0" placeholder="E-Mail" formControlName="email">
+          <input class="input" tabindex="0" placeholder="E-Mail" formControlName="email" aria-label="E-Mail: E-Mail" aria-labelledby="email-label">
           <mat-icon matSuffix>email</mat-icon>
           <mat-error *ngIf="registerForm.controls['email'].hasError('required')">
           </mat-error><p>

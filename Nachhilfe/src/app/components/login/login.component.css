@@ -76,14 +76,21 @@ header {
 strong{
   color:rgb(12, 74, 12);
 }
+
+
+
 a{
   margin-left: 65rem;
   font-size: large;
-  
+
 }
 
 mat-error{
   color:rgb(123, 2, 2);
+}
+
+legend{
+  font-size: small;
 }
 
 

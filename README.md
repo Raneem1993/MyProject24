@@ -38,7 +38,8 @@ Ausgesuchte WCAG 2.2 Erfolgskriterien:
 
 Aber wenn der "Nutzer" noch nicht im Datenbank registriert ist, dann bekommt man einen Registrierungsformular.
 
-<img width="1423" alt="Bildschirmfoto 2024-07-04 um 18 20 02" src="https://github.com/Raneem1993/MyProject24/assets/92716308/d3dc86a4-f542-4c13-b023-a787084a591d">
+<img width="1387" alt="Bildschirmfoto 2024-07-20 um 12 45 51" src="https://github.com/user-attachments/assets/f1d483d7-3b2b-4fce-8399-c43b64fbc599">
+
 <img width="1425" alt="Bildschirmfoto 2024-07-04 um 18 21 23" src="https://github.com/Raneem1993/MyProject24/assets/92716308/f1654670-43a8-4131-8eba-7d5511dfb177">
 
 Die Startseite sieht so aus:

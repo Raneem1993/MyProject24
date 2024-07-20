@@ -9,6 +9,7 @@ Wenn man auf den "Anmeldung" Button drückt, wird man einen Anmelgungsformular b
 Ausgesuchte WCAG 2.2 Erfolgskriterien:
 
 • 1.4.11 Non-text-Conrast: Die Website hat einen ausreichenden Kontrast zwischen Text und Hintergrund, um eine gute Lesbarkeit zu gewährleisten.
+
 • 2.4.3 Focus Order
 • 2.1 Keyboard Accessible.
 • 3.1.1 Language of page.
